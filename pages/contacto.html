@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../imgs/logo.webp" type="image/webp">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo pag-final"> CONTACTO</h1>
+
+        <nav>
+            <ul class="menu">
+                <li class="menu_item"><a href="ingredientes.html" target="_blank"> SECCION 1 (INGREDIENTES)</a></li>
+                <li class="menu_item"><a href="variantes.html" target="_blank"> SECCIÓN 2 (VARIANTES DE PASTAS)</a></li>
+                <li class="menu_item"><a href="salsas(y_optativos).html" target="_blank"> SECCION 3 (SALSAS)</a></li>
+                <li class="menu_item"><a href="salsas(y_optativos).html" target="_blank"> SECCION 4 (OPTATIVOS: QUESOS,
+                        AGREGADOS EXTRA)</a></li>
+                <li class="menu_item active"><a href="pages/contacto.html" target="_blank"> CONTACTO</a> </li>
+                <!-- ESTO DE CONTACTOS VA EN EL FOOTER -->
+                <!-- <li><a href="#"> VOLVER ARRIBA</a> </li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+
+    <footer>
+        <form>
+            <div>
+                <p class=" form">Dejanos tu nombre así te contactamos de forma más personalizada:</p>
+                <label for="nombre"> NOMBRE: </label>
+                <input id="nombre" type="text" placeholder="Ingresá tu nombre">
+            </div>
+            <div>
+                <p class=" form"> Este espacio es para tu mensaje! </p>
+                <textarea rows="10" cols=50" placeholder="Ingresá tu mensajito acá"></textarea>
+                <!-- <label for="mensaje"> MENSAJITO: </label>
+                <input id="mensaje" type="text" placeholder="Ingresá tu consulta" required> -->
+            </div>
+            <div>
+                <p class=" form">Dejanos tu receta preferida! Si gana el concurso de la más elegida la agregamos a
+                    nuestra página!</p>
+                <textarea rows="10" cols="50" placeholder="Ingresá acá tu receta"></textarea>
+                <!-- <label for="receta"> RECETA: </label>
+                <input id="receta" type="text" placeholder="Ingresá tu receta"> -->
+            </div>
+            <div>
+                <p class=" form">Dejanos un correo de contacto así podemos avisarte de nuestros concursos y nuevas
+                    recetas!</p>
+                <label for="mail"> E-MAIL: </label>
+                <input id="mail" type="email" placeholder="Ingresá tu mail de contacto" required>
+            </div>
+
+            <div>
+                <p class=" form">¿SOS MAYOR DE EDAD?</p>
+                <input type="radio" name="edad" value="mayor"> SI
+                <input type="radio" name="edad" value="menor"> NO
+            </div>
+            <div>
+                <p class=" form">INDICANOS CUÁL ES TU FAVORITO!</p>
+                <input id="gruyere" type="checkbox"> <label for="gruyere"> QUESO GRUYERE</label>
+                <input id="parmesano" type="checkbox"> <label for="parmesano"> QUESO PARMESANO</label>
+                <input id="ricota" type="checkbox"> <label for="ricota"> QUESO RICOTA</label>
+                <input id="muzzarella" type="checkbox"> <label for="muzzarella"> QUESO MUZZARELLA</label>
+                <input id="cheddar" type="checkbox"> <label for="cheddar"> QUESO CHEDDAR</label>
+                <input id="gouda" type="checkbox"> <label for="gouda"> QUESO GOUDA</label>
+                <input id="provolone" type="checkbox"> <label for="provolone"> QUESO PROVOLONE</label>
+                <input id="fybo" type="checkbox"> <label for="fybo"> QUESO FYBO </label>
+            </div>
+            <div>
+                <p class=" form"> INDICANOS AHORA TU SALSA FAVORITA! </p>
+                <select>
+                    <option disabled selected> Seleccioná tu salsa preferida</option>
+                    <option value="salsa rosada"> SALSA ROSADA (CREMA Y TOMATE)</option>
+                    <option value="salsa blanca"> SALSA BLANCA </option>
+                    <option value="salsa champignones"> SALSA DE CHAMPIGNONES </option>
+                    <option value="salsa c/albondigas"> SALSA DE TOMATE CON ALBÓNDIGAS </option>
+                    <option value="salsa fileto"> SALSA FILETTO </option>
+                    <option value="salsa c/carne"> SALSA DE TOMATE CON CARNE </option>
+                    <option value="salsa c/soja"> SALSA DE TOMATE CON SOJA (OPCIÓN VEGGIE) </option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="ENVIAR">
+            </div>
+            <div>
+                <input type="reset" value="VACIAR LO ESCRITO Y NO ENVIAR NADA">
+            </div>
+
+        </form>
+        <a href="../index.html"> IR A PÁG INICIO</a>
+    </footer>
+</body>
+
+</html>

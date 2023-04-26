@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+}
+
+/* PAGINA 1/INICIO */
+body {
+  background-image: url("../imgs/img_fondo1.jpg");
+  height: 80vh;
+}
+
+.header .navbar,
+.card2 {
+  background-color: transparent !important;
+}
+
+.card {
+  background-color: rgb(240, 214, 167);
+}
+
+.titulo2 {
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.cardImg {
+  object-fit: fill;
+}
+
+.nav-link {
+  color: black;
+}
+/* PAGINA 1/INICIO */
+
+/* PAGINA 1/SALSAS */
+div.footerSalsas {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  margin-top: 10px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.menuSalsas {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 500;
+}
+
+/* .menuSalsas .menu_itemSalsas {
+    text-decoration: none;
+    list-style-type: none;
+} */
+
+.menu_itemSalsas{
+display: inline-block;
+margin-inline: 15px;
+margin-block: 5px;
+}
+
+.footerSalsas a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.menu_itemSalsas a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.menu_itemSalsas a:hover{
+    font-weight: 800;
+} 
+/* PAGINA 1/SALSAS */

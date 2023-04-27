@@ -50,35 +50,31 @@ div.footerSalsas {
   display: flex;
   text-decoration: none;
   list-style-type: none;
-  font-weight: 500;
+  font-weight: 400;
+  justify-content: center;
 }
 
-/* .menuSalsas .menu_itemSalsas {
-    text-decoration: none;
-    list-style-type: none;
-} */
-
-.menu_itemSalsas{
-display: inline-block;
-margin-inline: 15px;
-margin-block: 5px;
+.menu_itemSalsas {
+  display: inline-block;
+  margin-inline: 15px;
+  margin-block: 5px;
 }
 
-.footerSalsas a{
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
+.footerSalsas a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
 }
 
-.menu_itemSalsas a{
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
+.menu_itemSalsas a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
 }
 
-.menu_itemSalsas a:hover{
-    font-weight: 800;
-} 
+.menu_itemSalsas a:hover {
+  font-weight: 800;
+}
 
 .containerSalsas {
   width: 100%;
@@ -86,47 +82,70 @@ margin-block: 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:  
-      "funghi      napolitana  arrabbiata"
-      "puttanesca  carbonara   amatriciana"
-      "pesto       bolognesa   alfredo";
+  grid-template-areas:
+    "funghi      napolitana  arrabbiata"
+    "puttanesca  carbonara   amatriciana"
+    "pesto       bolognesa   alfredo";
+    /* justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center; */
 }
 
 .funghi {
   grid-area: SALSA FUNGHI;
-  max-width: 33%;
 }
 .puttanesca {
   grid-area: SALSA PUTTANESCA;
-  max-width: 33%;
 }
 .pesto {
   grid-area: SALSA PESTO GENOVÉS;
-  max-width: 33%;
 }
 .napolitana {
   grid-area: SALSA NAPOLITANA;
-  max-width: 33%;
 }
 .carbonara {
   grid-area: SALSA CARBONARA;
-  max-width: 33%;
 }
 .bolognesa {
   grid-area: SALSA BOLOGNESA;
-  max-width: 33%;
 }
 .arrabbiata {
   grid-area: SALSA ARRABBIATA;
-  max-width: 33%;
 }
 .amatriciana {
   grid-area: SALSA AMATRICIANA;
-  max-width: 33%;
 }
 .alfredo {
   grid-area: SALSA ALFREDO;
-  max-width: 33%;
+}
+
+.funghi, .puttanesca, .pesto, .napolitana, .carbonara, .bolognesa, .arrabbiata, .amatriciana, .alfredo{
+  /* max-width: 30%; */
+  background-color: rgb(0, 0, 0, 30%);
+  padding: 5px;
+  margin: 5px;
+  border: 5px;
+  border-color: black;
+  border-radius: 5%;
+  /* justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center; */
+}
+
+.tituloSalsas {
+  padding: 10px;
+  font-weight: 400;
+  justify-content: center;
+  margin: 5px;
+}
+
+.textoSalsas {
+  font-weight: lighter;
+  padding: 5px;
+  margin: 5px;
+  justify-content: center;
 }
 
 .container > div {
@@ -152,19 +171,18 @@ margin-block: 5px;
   }
 }
 @media screen and (max-width: 480px) {
-
   .containerSalsas {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .containerSalsas > * {
-      flex: 1;
+    flex: 1;
   }
 
   .logo {
-      flex: 1.5;
+    flex: 1.5;
   }
 }
 /* PAGINA SALSAS */

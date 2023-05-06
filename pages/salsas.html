@@ -9,33 +9,52 @@
     <link rel="shortcut icon" href="../imgs/img1.png" type="image/webp">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="menuSalsas">
-                <li class="menu_itemSalsas"><a href="ingredientes.html" target="_blank"> INGREDIENTES</a>
-                </li>
-                <li class="menu_itemSalsas"><a href="variantes.html" target="_blank"> VARIANTES DE PASTAS</a></li>
-                <li class="menu_itemSalsas active"><a href="salsas(y_optativos).html" target="_blank"> SALSAS</a></li>
-                <li class="menu_itemSalsas"><a href="salsas(y_optativos).html" target="_blank"> EXTRAS</a></li>
-                <li class="menu_itemSalsas "><a href="./pages/contacto.html" target="_blank"> CONTACTO</a> </li>
-                <!-- ESTO DE CONTACTOS VA EN EL FOOTER -->
-                <!-- <li><a href="#"> VOLVER ARRIBA</a> </li> -->
-            </ul>
+    <header class="header fw-bolder">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid navbar1">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="" alt="IMAGEN DE PLATO DE FIDEOS" width="70" height="24">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ingredientes.html">INGREDIENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./salsas.html">SALSAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./variantes.html">VARIANTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
 
 
-    <!-- MODIFICAR DESCRIPCIONES DE LAS SALSAS -->
+<!-- AGREGAR IMAGENES ILUSTRATIVAS -->
     <main>
         <div class="containerSalsas text-center">
-            <div class="funghi">
+            <div class="funghi cardSalsa">
                 <h5 class="tituloSalsas">SALSA FUNGHI</h5>
                 <p class="textoSalsas">
                     En temporada, esta salsa se prepara con setas frescas, pero como esta es muy corta (más de los que
@@ -44,7 +63,7 @@
                     la que no existe una receta canónica, aunque la que os mostramos a continuación es la que aparece
                     recogida en "La cuchara de plata".</p>
             </div>
-            <div class="puttanesca">
+            <div class="puttanesca cardSalsa">
                 <h5 class="tituloSalsas">SALSA PUTTANESCA</h5>
                 <p class="textoSalsas">
                     La salsa puttanesca es una de los más completos acompañamientos para pasta. Es sabrosa y potente,
@@ -52,7 +71,7 @@
                     de Italia. Al parecer está ligado a los burdeles, donde se preparaba para saciar y seducir a los
                     clientes de este tipo de locales. De ahí su peculiar nombre.</p>
             </div>
-            <div class="pesto">
+            <div class="pesto cardSalsa">
                 <h5 class="tituloSalsas">SALSA PESTO GENOVÉS</h5>
                 <p class="textoSalsas">
                     El pesto genovés es una de las salsas para pasta con más personalidad y de sabor más potente. Hay
@@ -60,7 +79,7 @@
                     muchos otros usos, aunque el principal y el que hoy tratamos sea el de acompañar todo tipo de
                     pastas. Tan sencilla de preparar como rápida. Esta es su receta. </p>
             </div>
-            <div class="napolitana">
+            <div class="napolitana cardSalsa">
                 <h5 class="tituloSalsas"> SALSA NAPOLITANA</h5>
                 <p class="textoSalsas">
                     La salsa napolitana es una salsa de tomate enriquecida con ajo y distintos tipos de hierbas, como
@@ -69,7 +88,7 @@
                     base de pizza da lugar a la famosa pizza marinara, pero se puede usar para cualquier tipo de pasta,
                     espolvoreando abundante queso Parmesano o Pecorino.</p>
             </div>
-            <div class="carbonara">
+            <div class="carbonara cardSalsa">
                 <h5 class="tituloSalsas">SALSA CARBONARA</h5>
                 <p class="textoSalsas">
                     Otra de las salsas para pasta más populares del planeta es la salsa carbonara, cuyo origen se
@@ -78,7 +97,7 @@
                     Nada de añadir nata líquida, leche evaporada, ni cosas por el estilo. Si queremos aportar cremosidad
                     a la salsa, un poco de agua de la cocción de la pasta es suficiente.</p>
             </div>
-            <div class="bolognesa">
+            <div class="bolognesa cardSalsa">
                 <h5 class="tituloSalsas"> SALSA BOLOGNESA</h5>
                 <p class="textoSalsas">
                     La boloñesa es una de las salsas para pasta más tradicionales y clásicas de la gastronomía italiana.
@@ -91,7 +110,7 @@
                     "La cuchara de plata". La biblia de la cocina italiana la denomina salsa de carne boloñesa y esto es
                     lo que nos cuenta.</p>
             </div>
-            <div class="arrabbiata">
+            <div class="arrabbiata cardSalsa">
                 <h5 class="tituloSalsas">SALSA ARRABBIATA</h5>
                 <p class="textoSalsas">
                     Esta salsa pica mucho, por lo que los amantes de los sabores fuertes la gozarán de lo lindo. Su
@@ -99,13 +118,13 @@
                     sabor fuerte que la caracteriza. De origen romano, la salsa arrabbiata está compuesta por un puñado
                     de ingredientes básicos, así que replicarla en casa es bien fácil.</p>
             </div>
-            <div class="amatriciana">
+            <div class="amatriciana cardSalsa">
                 <h5 class="tituloSalsas">SALSA AMATRICIANA</h5>
                 <p class="textoSalsas">
-
+                    Es una de las salsas de tomate básicas de Italia. Debe su nombre a la ciudad de Amatrice, en la región del Lazio. Su preparación es muy sencilla y se basa en tres ingredientes: el guanciale, que en España podemos sustituir por papada ibérica curada, el tomate, que puede ser de una conserva de buena calidad, y el queso Pecorino Romano. Es una preparación muy rápida que se puede hacer prácticamente en el tiempo de preparar la pasta. Los formatos que tradicionalmente la acompañan son los bucatini o los rigatoni, pero unos sencillos espaguetis también le irán fenomenal.
                 </p>
             </div>
-            <div class="alfredo">
+            <div class="alfredo cardSalsa">
                 <h5 class="tituloSalsas">SALSA ALFREDO</h5>
                 <p class="textoSalsas">Esta salsa debe su nombre a su creador, Alfredo di Leilo, chef del restaurante
                     Alfredo alla Scrofa ubicado en el número 104 de la calle Scrofa de Roma. La receta estrella de Di
@@ -120,7 +139,7 @@
     </main>
 
     <footer>
-        <div class="footerSalsas">
+        <div class="footerAll">
             <a href="../index.html"> IR A INICIO</a>
         </div>
     </footer>

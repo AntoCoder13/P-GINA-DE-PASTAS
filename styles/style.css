@@ -5,12 +5,46 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   /* font-family: 'Ubuntu', sans-serif; */
+  /* background-color: rgb(245, 245, 245); */
+}
+
+body {
+  background-image: url("../imgs/img_fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+}
+
+.footerAll {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+}
+
+.footerAll a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  align-self: center;
+  justify-self: center;
+  align-items: bottom;
+}
+
+.footerAll a:hover {
+  font-weight: 700;
+  font-style: bolder;
+  font-size: 20px;
 }
 
 /* PAGINA 1/INICIO */
-body {
-  background-image: url("../imgs/img_fondo1.jpg");
-  height: 80vh;
+header .nav-item a:hover {
+  font-style: bolder;
+  font-size: 20px;
 }
 
 .header .navbar,
@@ -37,48 +71,7 @@ body {
 /* PAGINA 1/INICIO */
 
 /* PAGINA SALSAS */
-div.footerSalsas {
-  position: fixed;
-  top: 90%;
-  left: 50%;
-  margin-top: 10px;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.menuSalsas {
-  display: flex;
-  text-decoration: none;
-  list-style-type: none;
-  font-weight: 400;
-  justify-content: center;
-}
-
-.menu_itemSalsas {
-  display: inline-block;
-  margin-inline: 15px;
-  margin-block: 5px;
-}
-
-.footerSalsas a {
-  text-decoration: none;
-  list-style-type: none;
-  color: black;
-}
-
-.menu_itemSalsas a {
-  text-decoration: none;
-  list-style-type: none;
-  color: black;
-}
-
-.menu_itemSalsas a:hover {
-  font-weight: 800;
-}
-
 .containerSalsas {
-  width: 100%;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -86,10 +79,6 @@ div.footerSalsas {
     "funghi      napolitana  arrabbiata"
     "puttanesca  carbonara   amatriciana"
     "pesto       bolognesa   alfredo";
-    /* justify-content: center;
-    align-items: center;
-    align-self: center;
-    align-content: center; */
 }
 
 .funghi {
@@ -120,33 +109,43 @@ div.footerSalsas {
   grid-area: SALSA ALFREDO;
 }
 
-.funghi, .puttanesca, .pesto, .napolitana, .carbonara, .bolognesa, .arrabbiata, .amatriciana, .alfredo{
-  /* max-width: 30%; */
-  background-color: rgb(0, 0, 0, 30%);
+.funghi,
+.puttanesca,
+.pesto,
+.napolitana,
+.carbonara,
+.bolognesa,
+.arrabbiata,
+.amatriciana,
+.alfredo {
+  background-color: rgb(0, 0, 0, 10%);
   padding: 5px;
   margin: 5px;
   border: 5px;
   border-color: black;
   border-radius: 5%;
-  /* justify-content: center;
-  align-items: center;
-  align-self: center;
-  align-content: center; */
+  box-shadow: 3px 3px;
+  color: white;
 }
 
 .tituloSalsas {
   padding: 10px;
-  font-weight: 400;
   justify-content: center;
   margin: 5px;
+  font-style: bolder;
+  font-weight: 700;
 }
 
 .textoSalsas {
-  font-weight: lighter;
   padding: 5px;
   margin: 5px;
   justify-content: center;
 }
+
+/* ARREGLAR HOVER CARTITAS
+.cardSalsa:hover {
+  font-size: 20px;
+} */
 
 .container > div {
   display: grid;
@@ -186,3 +185,92 @@ div.footerSalsas {
   }
 }
 /* PAGINA SALSAS */
+
+/* PAGINA INGREDIENTES */
+.tituloIngredientes {
+  font-style: bolder;
+  color: black;
+  font-size: 30px;
+}
+
+.cuerpoIngredientes {
+  padding: 15px;
+}
+
+.ingredientesPpal {
+  color: white;
+  text-align: justify;
+}
+
+.ingredientesPpal .cartitaIngredientes {
+  margin: 15px;
+  border: 2px outset black;
+  border-radius: 5px;
+  /* background-color: linear-gradient(0deg, black, black); */
+}
+/* PAGINA INGREDIENTES */
+
+/* PAGINA DE VARIANTES */
+.contenedorGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+.clase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-galeria {
+  grid-row-start: span 3;
+}
+
+/* .titulo-img {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 15px;
+  background: linear-gradient(white, black);
+  width: 100%;
+} */
+
+.item-galeria:nth-child(1) {
+  grid-column-start: span 2;
+}
+
+.item-galeria:nth-child(3) {
+  grid-row-start: span 6;
+}
+
+.item-galeria:nth-child(5) {
+  grid-row-start: span 5;
+}
+
+.item-galeria:nth-child(6) {
+  grid-row-start: span 4;
+}
+
+.item-galeria:nth-child(7) {
+  grid-row-start: span 6;
+}
+
+.item-galeria:nth-child(8) {
+  grid-row-start: span 5;
+}
+
+@media (min-width:480px){
+  .contenedorGaleria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width:760px){
+  .contenedorGaleria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* PAGINA DE VARIANTES */

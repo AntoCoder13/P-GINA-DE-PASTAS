@@ -1,0 +1,51 @@
+.containerSalsas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "funghi      napolitana  arrabbiata"
+    "puttanesca  carbonara   amatriciana"
+    "pesto       bolognesa   alfredo";
+
+  .funghi {
+    grid-area: funghi;}
+  .puttanesca {
+    grid-area: puttanesca;}
+  .pesto {
+    grid-area: pesto;}
+  .napolitana {
+    grid-area: napolitana;}
+  .carbonara {
+    grid-area: carbonara;}
+  .bolognesa {
+    grid-area: bolognesa;}
+  .arrabbiata {
+    grid-area: arrabiatta;}
+  .amatriciana {
+    grid-area: amatriciana;}
+  .alfredo {
+    grid-area: alfredo;}
+
+  .cardSalsa {
+    background-color: rgb(0, 0, 0, 10%);
+    padding: 5px;
+    margin: 5px;
+    border: 5px 5% black;
+    box-shadow: 3px 3px;
+    color: white;
+
+    .tituloSalsas {
+      padding: 10px;
+      justify-content: center;
+      margin: 5px;
+      font-style: bolder;
+      font-weight: 700;
+    }
+
+    .textoSalsas {
+      padding: 5px;
+      margin: 5px;
+      justify-content: center;
+    }
+  }
+}

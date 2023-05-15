@@ -1,0 +1,26 @@
+.ingredientesPpal {
+    color: white;
+    text-align: justify;
+
+    .cartitaIngredientes {
+        margin: 15px;
+        border: 2px outset black;
+        border-radius: 5px;
+
+        .cuerpoIngredientes {
+            padding: 15px;
+
+            .tituloIngredientes {
+                font-style: bolder;
+                color: black;
+                font-size: 30px;
+            }
+        }
+
+        @for $item from 1 through 6 {
+            .cuerpoIngredientes#{$item} {
+                animation-delay: $item*0.6s;
+            }
+        }
+    }
+}

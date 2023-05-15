@@ -1,0 +1,22 @@
+.footerAll {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+
+     a {
+        text-decoration: none;
+        list-style-type: none;
+        color: black;
+        align-self: center;
+        justify-self: center;
+        align-items: bottom;
+
+        &:hover {
+            font-weight: 700;
+            font-style: bolder;
+            font-size: 20px;
+        }
+     }
+  }

@@ -1,0 +1,50 @@
+.container > div {
+  display: grid;
+  place-items: center;
+}
+
+/* MEDIA QUERIES DE SALSAS */
+@media screen and (max-width: 768px) {
+  .containerSalsas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  
+        /* "funghi      napolitana  arrabbiata"
+        "puttanesca  carbonara   amatriciana"
+        "pesto       bolognesa   alfredo"; */
+      "funghi     napolitana"
+      "arrabbiata puttanesca"
+      "carbonara  amatriciana"
+      "pesto      bolognesa"
+      "alfredo    .........";
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .containerSalsas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerSalsas > * {
+    flex: 1;
+  }
+
+  .logo {
+    flex: 1.5;
+  }
+}
+
+@media (min-width:576px){
+    .contenedorGaleria {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width:760px){
+    .contenedorGaleria {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}

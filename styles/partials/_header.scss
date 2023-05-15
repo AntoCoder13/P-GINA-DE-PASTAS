@@ -1,0 +1,26 @@
+.header .navbar,
+.card2 {
+  background-color: transparent !important;
+}
+
+header .nav-item a:hover {
+    font-style: bolder;
+    font-size: 20px;
+
+    > .nav-link {
+        color: black;
+    }
+}
+
+.titulo2 {
+    font-weight: 700;
+    color: aliceblue;
+}  
+
+.card {
+    background-color: rgb(240, 214, 167);
+
+    .cardImg {
+        object-fit: fill;
+    }
+}

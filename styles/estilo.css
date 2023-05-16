@@ -121,6 +121,60 @@ body {
   animation-delay: 3.6s;
 }
 
+.containerSalsas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "funghi      napolitana  arrabbiata" "puttanesca  carbonara   amatriciana" "pesto       bolognesa   alfredo";
+}
+.containerSalsas .funghi {
+  grid-area: funghi;
+}
+.containerSalsas .puttanesca {
+  grid-area: puttanesca;
+}
+.containerSalsas .pesto {
+  grid-area: pesto;
+}
+.containerSalsas .napolitana {
+  grid-area: napolitana;
+}
+.containerSalsas .carbonara {
+  grid-area: carbonara;
+}
+.containerSalsas .bolognesa {
+  grid-area: bolognesa;
+}
+.containerSalsas .arrabbiata {
+  grid-area: arrabiatta;
+}
+.containerSalsas .amatriciana {
+  grid-area: amatriciana;
+}
+.containerSalsas .alfredo {
+  grid-area: alfredo;
+}
+.containerSalsas .cardSalsa {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin: 5px;
+  border: 5px 5% black;
+  box-shadow: 3px 3px;
+  color: white;
+}
+.containerSalsas .cardSalsa .tituloSalsas {
+  padding: 10px;
+  justify-content: center;
+  margin: 5px;
+  font-style: bolder;
+  font-weight: 700;
+}
+.containerSalsas .cardSalsa .textoSalsas {
+  padding: 5px;
+  margin: 5px;
+  justify-content: center;
+}
+
 .contenedorFormulario {
   max-width: 100%;
   width: -moz-fit-content;

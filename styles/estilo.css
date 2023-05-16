@@ -124,7 +124,6 @@ body {
 .containerSalsas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "funghi      napolitana  arrabbiata" "puttanesca  carbonara   amatriciana" "pesto       bolognesa   alfredo";
 }
 .containerSalsas .funghi {
@@ -146,7 +145,7 @@ body {
   grid-area: bolognesa;
 }
 .containerSalsas .arrabbiata {
-  grid-area: arrabiatta;
+  grid-area: arrabbiata;
 }
 .containerSalsas .amatriciana {
   grid-area: amatriciana;

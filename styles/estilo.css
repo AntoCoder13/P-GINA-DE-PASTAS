@@ -55,15 +55,29 @@ body {
   grid-auto-rows: 100px;
   padding: 20px;
   grid-gap: 10px;
+  overflow: hidden;
 }
 .contenedorGaleria .item-galeria {
   grid-row-start: span 3;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 .contenedorGaleria .item-galeria .clase-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 25px;
+}
+.contenedorGaleria .item-galeria .titulo-img {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 40%;
+  bottom: 0;
+  translate: -50%, -50%;
+  font-size: 1rem;
+  text-shadow: 0 0 15px rgb(0, 0, 0);
 }
 .contenedorGaleria .item-galeria:nth-child(1) {
   grid-column-start: span 2;
@@ -96,6 +110,8 @@ body {
 }
 .ingredientesPpal .cartitaIngredientes .cuerpoIngredientes {
   padding: 15px;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 .ingredientesPpal .cartitaIngredientes .cuerpoIngredientes .tituloIngredientes {
   font-style: bolder;
@@ -122,6 +138,7 @@ body {
 }
 
 .containerSalsas {
+  margin: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "funghi      napolitana  arrabbiata" "puttanesca  carbonara   amatriciana" "pesto       bolognesa   alfredo";
@@ -158,8 +175,10 @@ body {
   padding: 5px;
   margin: 5px;
   border: 5px 5% black;
-  box-shadow: 3px 3px;
+  box-shadow: 0 1px 2px 1px;
   color: white;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 .containerSalsas .cardSalsa .tituloSalsas {
   padding: 10px;
@@ -178,7 +197,7 @@ body {
   max-width: 100%;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,6 +220,7 @@ body {
 .contenedorFormulario .formFinal {
   border: none;
   background: none;
+  margin: -0.7rem;
 }
 
 .derechos-de-autor {
@@ -246,8 +266,6 @@ body {
 
 .footerAll {
   width: 100%;
-  bottom: 0;
-  position: absolute;
   text-align: center;
   padding: 5px;
 }

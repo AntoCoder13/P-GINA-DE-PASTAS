@@ -10,6 +10,7 @@
 
         .cuerpoIngredientes {
             padding: 15px;
+            backdrop-filter: blur(15px);
 
             .tituloIngredientes {
                 font-style: bolder;

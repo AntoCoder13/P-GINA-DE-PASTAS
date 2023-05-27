@@ -1,4 +1,5 @@
 .containerSalsas {
+  margin: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
@@ -30,8 +31,10 @@
     padding: 5px;
     margin: 5px;
     border: 5px 5% black;
-    box-shadow: 3px 3px;
+    box-shadow: 0 1px 2px 1px;
     color: white;
+    backdrop-filter: blur(15px);
+
 
     .tituloSalsas {
       padding: 10px;

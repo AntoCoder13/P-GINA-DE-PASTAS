@@ -46,7 +46,6 @@ body {
   background-size: cover;
   background-position: center center;
   position: relative;
-  padding-bottom: 2rem;
   min-height: 100vh;
 }
 
@@ -88,6 +87,7 @@ body {
 .ingredientesPpal {
   color: white;
   text-align: justify;
+  padding-bottom: 1rem;
 }
 .ingredientesPpal .cartitaIngredientes {
   margin: 15px;
@@ -179,14 +179,17 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contenedorFormulario .contenedorForm {
   max-width: 100%;
   border: 0.5px inset black;
   border-radius: 20px;
   text-align: center;
-  margin: 20px;
-  padding: 5px;
+  margin: 0.2rem;
+  padding: 1rem;
   font-weight: 500;
   color: black;
   background: rgb(2, 0, 36);
@@ -200,43 +203,45 @@ body {
   background: none;
 }
 
-footer {
-  min-height: 100px;
-}
-footer .iconos-redes-sociales a {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px;
-  margin: 10px;
-  border: 2px solid white;
-  border-radius: 50%;
-  transition: all 0.2s ease-in;
-}
-footer .iconos-redes-sociales a:hover {
-  background-color: white;
-  border: 2px solid rgb(13, 110, 253);
-}
-footer .iconos-redes-sociales a:hover i {
-  color: black;
-}
-footer .iconos-redes-sociales a i {
-  color: white;
-  font-size: 1.5rem;
-  transition: all 0.2s ease-in;
-}
-
 .derechos-de-autor {
   font-size: 15px;
   color: #aeaeae;
-  padding: 20px;
+  padding-block: 1rem;
 }
 
 .seccion-oscura {
   color: white;
   background-color: #1b1b32;
+}
+
+.d-flex {
+  min-height: 40px;
+  margin-top: 2%;
+}
+.d-flex .iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  color: rgb(211, 141, 179);
+}
+.d-flex .iconos-redes-sociales a:hover {
+  background-color: #f1dcf1;
+  border: 2px solid rgb(70, 15, 15);
+}
+.d-flex .iconos-redes-sociales a:hover i {
+  color: rgb(196, 64, 156);
+}
+.d-flex .iconos-redes-sociales a i {
+  color: rgb(196, 64, 156);
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
 }
 
 .footerAll {
